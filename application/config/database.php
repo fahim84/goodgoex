@@ -80,7 +80,7 @@ if(ENVIRONMENT == 'development')
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'fwutilities',
+        'database' => 'goodgoex',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,
