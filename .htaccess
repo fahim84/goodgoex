@@ -2,8 +2,8 @@ Options +Indexes
 
 RewriteEngine On
 
-#RewriteCond %{HTTP_HOST} ^alhadafuae.com [NC]
-#RewriteRule ^(.*)$ http://www.alhadafuae.com/$1 [L,R=301]
+#RewriteCond %{HTTP_HOST} ^goodgoex.com [NC]
+#RewriteRule ^(.*)$ http://www.goodgoex.com/$1 [L,R=301]
 
 #RewriteCond %{HTTPS} off
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
