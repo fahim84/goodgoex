@@ -126,9 +126,9 @@ if(ENVIRONMENT == 'production')
     $db['default'] = array(
         'dsn'	=> '',
         'hostname' => 'localhost',
-        'username' => 'fahim84_fwu',
-        'password' => 'FWutilities123',
-        'database' => 'fahim84_fwutilities',
+        'username' => 'fahim84_goodgoex',
+        'password' => 'Goodgoex123',
+        'database' => 'fahim84_goodgoex',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,
