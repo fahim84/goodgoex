@@ -27,7 +27,7 @@ $config['base_url'] = '';
 $http_host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
 if(ENVIRONMENT == 'development')
 {
-    $config['base_url'] = 'http://localhost/fwutilities/';
+    $config['base_url'] = 'http://localhost/goodgoex/';
 }
 if(ENVIRONMENT == 'production')
 {
@@ -333,7 +333,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = 'fwutilies';
+$config['encryption_key'] = 'goodgoex';
 
 /*
 |--------------------------------------------------------------------------

@@ -7,7 +7,7 @@
             <span></span>
             <span></span>
         </button>
-        <a class="navbar-brand text-brand" href="<?php echo base_url(); ?>">FW<span class="color-b">Utilities</span></a>
+        <a class="navbar-brand text-brand" href="<?php echo base_url(); ?>">Good<span class="color-b">GoEx</span></a>
         <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
                 data-target="#navbarTogglerDemo01" aria-expanded="false">
             <span class="fa fa-search" aria-hidden="true"></span>
