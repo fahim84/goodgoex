@@ -15,14 +15,16 @@
         <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link <?php echo $active == 'home' ? 'active' : ''; ?>" href="<?php echo base_url(); ?>welcome/index">Home</a>
+                    <a class="nav-link <?php echo @$active == 'home' ? 'active' : ''; ?>" href="<?php echo base_url(); ?>welcome/index">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo $active == 'about' ? 'active' : ''; ?>"  href="<?php echo base_url(); ?>welcome/about">About</a>
+                    <a class="nav-link <?php echo @$active == 'about' ? 'active' : ''; ?>"  href="<?php echo base_url(); ?>welcome/about">About</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link <?php echo $active == 'contact' ? 'active' : ''; ?>" href="<?php echo base_url(); ?>welcome/contact">Contact</a>
+                    <a class="nav-link <?php echo @$active == 'contact' ? 'active' : ''; ?>" href="<?php echo base_url(); ?>welcome/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?php echo @$active == 'signup' ? 'active' : ''; ?>" href="<?php echo base_url(); ?>login/signup">Sign Up</a>
                 </li>
             </ul>
         </div>

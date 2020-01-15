@@ -27,6 +27,8 @@
     <!-- Main Stylesheet File -->
     <link href="<?php echo base_url(); ?>template1/css/style.css" rel="stylesheet">
 
+    <script src="<?php echo base_url(); ?>template1/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
+<?php $this->load->view('top_navigation',$this->data); ?>

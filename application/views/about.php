@@ -1,5 +1,4 @@
 <?php $this->load->view('header',$this->data); ?>
-<?php $this->load->view('top_navigation',$this->data); ?>
 
     <!--/ Intro Single star /-->
     <section class="intro-single">
