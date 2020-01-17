@@ -84,7 +84,6 @@ class Login extends CI_Controller
 			{
 				$_SESSION['msg_error'][] = 'Invalid login id or password';
 			}
-            redirect(base_url());
 		}
 
 		$this->load->view('login_page',$this->data);
@@ -184,7 +183,7 @@ class Login extends CI_Controller
                 }
 
             }
-            redirect('welcome/index/');
+            redirect('login/signup/');
         }
 
         $this->load->view('signup_page',$this->data);

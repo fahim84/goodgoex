@@ -78,88 +78,78 @@
         }
     </script>
 
-  <?php if (validation_errors()): ?>
-      <div class="alert alert-danger">
-          <button type="button" class="close" data-dismiss="alert">×</button>
-          <?php echo validation_errors();?>
-      </div>
-  <?php endif; ?>
+    <!--/ Contact Star /-->
+    <section class="contact">
+        <div class="container">
+            <div class="row">
 
-  <?php if(isset($_SESSION['msg_error'])){ ?>
-      <div class="alert alert-danger">
-          <button type="button" class="close" data-dismiss="alert">×</button>
-          <?php echo display_error(); ?>
-      </div>
-  <?php } ?>
+                <div class="col-sm-12 section-t8">
+                    <div class="row">
+                        <div class="offset-md-3 col-md-6">
+                            <?php if (validation_errors()): ?>
+                                <div class="alert alert-danger">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <?php echo validation_errors();?>
+                                </div>
+                            <?php endif; ?>
 
-  <?php if(isset($_SESSION['msg_success'])){ ?>
-      <div class="alert alert-success">
-          <button type="button" class="close" data-dismiss="alert">×</button>
-          <?php echo display_success_message(); ?>
-      </div>
-  <?php } ?>
+                            <?php if(isset($_SESSION['msg_error'])){ ?>
+                                <div class="alert alert-danger">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <?php echo display_error(); ?>
+                                </div>
+                            <?php } ?>
+
+                            <?php if(isset($_SESSION['msg_success'])){ ?>
+                                <div class="alert alert-success">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <?php echo display_success_message(); ?>
+                                </div>
+                            <?php } ?>
+
+                            <div class="modalheader">
+                                <h3>Login</h3>
+                            </div>
+
+                            <form method="post" action="<?php echo base_url(); ?>login/index" class="row">
+                                <div class="col-12">
+                                    <label>Email</label>
+                                    <input required name="email" type="email" class="form-control" placeholder="Enter user email">
+                                </div>
+                                <div class="col-12">
+                                    <label>Password</label>
+                                    <input required name="password" type="password" class="form-control" placeholder="Enter password">
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                </div>
+                                <div class="col-12">
+
+                                    <a href="<?php echo base_url(); ?>login/forgot_password" class="forgotpassword pull-right">Forgot password</a>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </div>
+
+                                <div class="col-12 or_separator" align="center">
+                                    OR
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                </div>
+
+                            </form><!--//form//col-->
 
 
-    <div class="container-fluid innersection removeboxshadow">
-        <div class="row">
-            <div class="container">
-                <div class="row searchlisting">
+                            <p class="modal_noaccount">Don't have an account ? <a href="<?php echo base_url(); ?>login/signup" class="signupfromlogin" >Sign up here</a></p>
 
-                    <div class="offset-md-3 col-md-6">
+                        </div>
 
-
-                    <div class="modalheader">
-                        <img src="<?php echo base_url(); ?>assets/client/images/login-icon.png" alt="login_icon">
-                        <h3>Login</h3>
                     </div>
-                    <form method="post" action="<?php echo base_url(); ?>login/index" class="row">
-                        <div class="col-12">
-                            <label>Email</label>
-                            <input required name="email" type="email" class="form-control" placeholder="Enter user email">
-                        </div>
-                        <div class="col-12">
-                            <label>Password</label>
-                            <input required name="password" type="password" class="form-control" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-12">
-                            <br>
-                        </div>
-                        <div class="col-12">
-
-                            <a href="<?php echo base_url(); ?>login/forgot_password" class="forgotpassword pull-right">Forgot password</a>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </div>
-
-                        <div class="col-12 or_separator" align="center">
-                            OR
-                        </div>
-                        <div class="col-md-12">
-                            <br>
-                        </div>
-                        <div class="col-12">
-                            <a onclick="login_by_facebook();" class="socialbtn">
-                                <img src="<?php echo base_url(); ?>assets/client/images/login-with-facebook.png">
-                            </a>
-                        </div>
-                        <!--<div class="col-12">
-                            <button type="submit" class="socialbtn">
-                                <img src="<?php /*echo base_url(); */?>assets/client/images/login-with-googleplus.png">
-                            </button>
-                        </div>-->
-                    </form><!--//form//col-->
-                        <div class="col-md-12">
-                            <br>
-                        </div>
-                    <p class="modal_noaccount">Don't have an account ? <a href="<?php echo base_url(); ?>login/signup" class="signupfromlogin" >Sign up here</a></p>
-
-
-                    </div><!--//row-->
-                </div><!--//row-->
-
-            </div><!--//container//-->
-        </div><!--//row//-->
-    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Contact End /-->
 
 <?php $this->load->view('footer',$this->data); ?>

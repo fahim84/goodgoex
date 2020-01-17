@@ -23,9 +23,18 @@
                 <li class="nav-item">
                     <a class="nav-link <?php echo @$active == 'contact' ? 'active' : ''; ?>" href="<?php echo base_url(); ?>welcome/contact">Contact</a>
                 </li>
+                <?php if(isset($_SESSION['client']->user_id) ){ ?>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo @$active == 'logout' ? 'active' : ''; ?>" href="<?php echo base_url(); ?>login/logout">Log Out</a>
+                    </li>
+                <?php }else{ ?>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo @$active == 'login' ? 'active' : ''; ?>" href="<?php echo base_url(); ?>login/index">Login</a>
+                    </li>
                 <li class="nav-item">
                     <a class="nav-link <?php echo @$active == 'signup' ? 'active' : ''; ?>" href="<?php echo base_url(); ?>login/signup">Sign Up</a>
                 </li>
+                <?php } ?>
             </ul>
         </div>
 
